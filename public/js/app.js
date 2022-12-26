@@ -7,7 +7,7 @@ function getWeather() {
       let output;
       if (data.error) output = "Error: " + data.error;
       else
-        output = `Location: ${data.placeName} Temp: ${data.temp} Description: ${data.description}`;
+        output = `Current weather in ${data.placeName} is ${data.description}. It is currently ${data.temp} degrees and it feels like ${data.feels_like} degrees`;
 
       responseElement.innerText = output;
     });
