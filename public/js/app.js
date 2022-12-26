@@ -1,5 +1,3 @@
-console.log("Client side js");
-
 function getWeather() {
   const address = document.getElementById("addressInput").value;
   const responseElement = document.getElementById("response");
